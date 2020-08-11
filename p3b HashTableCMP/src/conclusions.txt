@@ -1,0 +1,25 @@
+p3b CONCLUSIONS.TXT
+
+Complete p3b and answer the following questions using results of running JDK Mission Control to justify your conclusions..
+
+1) What can you tell about the performance of your hash table implementation compared to Java's tree map? 
+Explain why (or when) your hash table is better or worse than Java's Tree Map.
+
+My HashTable is worse than the treemap. First, the treemap only requires 1014 cpu cycles, but my HashTable requires 4793 cycles.
+Second, the treemap only use 330MiB memory, but my HashTable use 2.4GiB memory. 
+So the treemap is better on either space or time.
+
+2) What did you observe in jdk mission control to come to the conclusion above?
+
+The number of cycles for my HashTable is much more larger than that of treemap.
+Also, in Method polling, my HashTable class uses 1299 cpu cycles and the treemap class only uses 229.
+
+3) SCREENSHOT_001.PNG NOTES: Briefly describe what this image 001 shows
+
+The put method from treemap has less count of cpu cycles (1,303) than the insert method from HashTable (3,776).
+
+4) SCREENSHOT_002.PNG NOTES: Briefly describe what this image 002 shows
+
+Treemap has less memory usage (1,015) than hashtable has (2,787).
+
+5) Describe other screenshots if you include them in your submission.
